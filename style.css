@@ -32,6 +32,7 @@ body {
     height: 100%;
     background-color: var(--dark-server-list);
     overflow-y: auto;
+    scrollbar-width: 0px;
 }
 
 .servers::-webkit-scrollbar, .nav::-webkit-scrollbar {
