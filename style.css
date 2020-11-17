@@ -1,0 +1,136 @@
+:root {
+    --dark-bg: #36393f;
+    --dark-server-list: #202225;
+    --server-divider: #2d2f32;
+    --blurple: #7289da;
+    --dark-blurple: #4d5e94;
+    --green: #43b581;
+    --dark-primary: #2f3136;
+    --text-gray: #dcddde;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-bg);
+    color: #FFFFFF;
+}
+
+.rootDiv {
+    display: grid;
+    grid-template-columns: 0px 70px 300px;
+    grid-template-rows: auto;
+}
+
+.servers {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: row1-start;
+    grid-row-end: 3;
+    position: absolute;
+    width: 70px;
+    height: 100%;
+    background-color: var(--dark-server-list);
+    overflow-y: auto;
+}
+
+.servers::-webkit-scrollbar, .nav::-webkit-scrollbar {
+    width: 0px;
+}
+
+.homebutton {
+    position: relative;
+    background-color: var(--dark-bg);
+    color: #FFFFFF;
+    border-radius: 50%;
+    text-align: center;
+    height: 58px;
+    width: 58px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.server {
+    position: relative;
+    background-color: var(--dark-bg);
+    color: #FFFFFF;
+    border-radius: 50%;
+    text-align: center;
+    height: 58px;
+    width: 58px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.invite {
+    color: var(--green) !important;
+    font-size: 48px;
+}
+
+.invite:hover {
+    color: #FFFFFF !important;
+    background-color: var(--green) !important;
+}
+
+.server-active, .server:hover {
+    background-color: var(--blurple);
+    border-radius: 30%;
+    transition: 0.3s;
+}
+
+.homebutton:hover {
+    background-color: var(--blurple);
+    border-radius: 30%;
+    transition: 0.3s;
+}
+
+.server-divider {
+    margin-top: 7px;
+    width: 50%;
+    background-color: var(--server-divider);
+    height: 3px;
+    border: none;
+    border-radius: 15px;
+}
+
+.nav {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    position: relative;
+    float:right;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: var(--dark-primary);
+}
+
+.navGuildItems {
+    display: flex;
+    justify-content: space-between;
+}
+
+.guild-opener {
+    height: 30px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
+.navguild {
+    border-bottom: 1px solid var(--dark-server-list);
+}
+
+.guildDropdown {
+    margin-right: 43px;
+}
