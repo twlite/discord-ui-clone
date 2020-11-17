@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 :root {
     --dark-bg: #36393f;
     --dark-server-list: #202225;
@@ -14,6 +16,7 @@ body {
     padding: 0;
     background-color: var(--dark-bg);
     color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .rootDiv {
