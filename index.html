@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discord UI Clone</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
+    <noscript>Please enable JavaScript to access this website.</noscript>
     <div class="rootDiv">
         <div class="side-bar">
             <div class="nav">
@@ -14,15 +18,23 @@
                     <div class="navguild">
                         <div class="guild-opener">
                             <div class="navGuildItems">
-                                <h4 class="guildSelectorName">Snowflake Studio ❄</h4>
-                                
+                                <h4 class="guildSelectorName">Server Name</h4>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="userBox" style="">
-                <h4>test</h4>
+            <div class="userBox">
+                <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="avatar" class="userAvatar">
+                <div class="userinfo">
+                    <h4 class="username">Username</h4>
+                    <h6 class="discriminator">#1234</h6>
+                </div>
+                <div class="usermenuicons">
+                    <div class="mic" id="micToggle"></div>
+                    <div class="headphone" id="headphoneToggle"></div>
+                    <div class="settings" id="settingsToggle"></div>
+                </div>
             </div>
         </div>
         <div class="servers">
@@ -35,35 +47,36 @@
             </div>
             <hr class="server-divider" />
             <div class="server">
-                <p>SS</p>
+                <p class="servericon">SS</p>
             </div>
             <div class="server">
-                <p>S1</p>
+                <p class="servericon">S1</p>
             </div>
             <div class="server">
-                <p>S2</p>
+                <p class="servericon">S2</p>
             </div>
             <div class="server">
-                <p>S3</p>
+                <img class="servericon" src="https://cdn.discordapp.com/embed/avatars/0.png">
             </div>
             <div class="server">
-                <p>S4</p>
+                <img class="servericon" src="https://cdn.discordapp.com/embed/avatars/1.png">
             </div>
             <div class="server">
-                <p>S5</p>
+                <img class="servericon" src="https://cdn.discordapp.com/embed/avatars/2.png">
             </div>
             <div class="server">
-                <p>S6</p>
+                <img class="servericon" src="https://cdn.discordapp.com/embed/avatars/3.png">
             </div>
             <div class="server">
-                <p>S7</p>
+                <img class="servericon" src="https://cdn.discordapp.com/embed/avatars/4.png">
             </div>
             <div class="server invite">
                 <p class="inviteButton">+</p>
             </div>
         </div>
         <div class="container"></div>
-        <div class="footer"></div>
+        <div class="members"></div>
     </div>
 </body>
+
 </html>

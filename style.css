@@ -10,6 +10,8 @@
     --dark-primary: #2f3136;
     --text-gray: #dcddde;
     --user-box: #292B2F;
+    --iconColor: #b9bbbe;
+    --red: #dd4444;
 }
 
 body {
@@ -37,10 +39,10 @@ body {
     background-color: var(--dark-server-list);
     overflow-y: auto;
     scrollbar-width: 0px;
-
     display: flex;
     align-items: center;
     flex-direction: column;
+    user-select: none;
 }
 
 .servers::-webkit-scrollbar, .nav::-webkit-scrollbar {
@@ -79,6 +81,14 @@ body {
     transition: 0.2s;
 }
 
+.server img {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.2s;
+}
+
 .invite {
     color: var(--green) !important;
     font-size: 48px;
@@ -91,6 +101,11 @@ body {
 
 .server-active, .server:hover {
     background-color: var(--blurple);
+    border-radius: 30%;
+    transition: 0.3s;
+}
+
+.server img:hover {
     border-radius: 30%;
     transition: 0.3s;
 }
@@ -111,7 +126,6 @@ body {
 }
 
 .side-bar {
-    
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -151,4 +165,70 @@ body {
     width: 100%;
     height: 53px;
     margin-bottom: 0;
+    display: flex;
+}
+
+.userAvatar {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.userAvatar:hover {
+    background-color: #000000;
+    opacity: 0.8;
+}
+
+.userinfo {
+    margin-left: 55px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.username {
+    display: block !important;
+    margin: 0;
+    font-weight: bolder;
+}
+
+.discriminator {
+    display: block !important;
+    margin: 0;
+    font-weight: lighter;
+    color: var(--text-gray);
+}
+
+.guildSelectorName {
+    user-select: none;
+    cursor: pointer;
+}
+
+.usermenuicons {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.mic, .headphone, .settings {
+    padding: 3px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.mic svg, .headphone svg, .settings svg {
+    height: 20px;
+    width: 20px;
+    fill: var(--iconColor);
+}
+
+.mic:hover, .headphone:hover, .settings:hover {
+    background-color: var(--dark-bg);
+}
+
+.icon-strikethrough {
+    fill: var(--red);
 }
