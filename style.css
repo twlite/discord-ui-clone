@@ -9,6 +9,7 @@
     --green: #43b581;
     --dark-primary: #2f3136;
     --text-gray: #dcddde;
+    --user-box: #292B2F;
 }
 
 body {
@@ -109,7 +110,8 @@ body {
     border-radius: 15px;
 }
 
-.nav {
+.side-bar {
+    
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -118,8 +120,10 @@ body {
     float:right;
     width: 80%;
     height: 100vh;
-    overflow-y: auto;
     background-color: var(--dark-primary);
+}
+.nav {
+    overflow-y: auto;
 }
 
 .navGuildItems {
@@ -139,4 +143,12 @@ body {
 
 .guildDropdown {
     margin-right: 43px;
+}
+.userBox {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--user-box);
+    width: 100%;
+    height: 53px;
+    margin-bottom: 0;
 }
