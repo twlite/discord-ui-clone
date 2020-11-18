@@ -36,6 +36,10 @@ body {
     background-color: var(--dark-server-list);
     overflow-y: auto;
     scrollbar-width: 0px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .servers::-webkit-scrollbar, .nav::-webkit-scrollbar {
@@ -48,9 +52,8 @@ body {
     color: #FFFFFF;
     border-radius: 50%;
     text-align: center;
-    height: 58px;
-    width: 58px;
-    margin-left: 5px;
+    height: 48px;
+    width: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,9 +68,8 @@ body {
     color: #FFFFFF;
     border-radius: 50%;
     text-align: center;
-    height: 58px;
-    width: 58px;
-    margin-left: 5px;
+    height: 48px;
+    width: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
