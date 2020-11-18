@@ -6,4 +6,4 @@ Discord UI Clone in HTML
 # Preview
 **[https://snowflake107.github.io/discord-ui-clone](https://snowflake107.github.io/discord-ui-clone)**
 
-![img](https://i.imgur.com/qIJnAma.png)
+![img](https://i.imgur.com/1wB32B0.png)
