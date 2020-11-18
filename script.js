@@ -65,12 +65,12 @@ setupIcon();
 
 micToggle.addEventListener("click", () => {
     // just a test
-    if (micToggle.innerHTML.includes(`class="unmuted"`)) micToggle.innerHTML = MIC_MUTED;
+    if (micToggle.innerHTML.includes(`class="muted"`)) micToggle.innerHTML = MIC_MUTED;
     else micToggle.innerHTML = MIC_UNMUTED;
 });
 
 headphoneToggle.addEventListener("click", () => {
     // just a test
-    if (headphoneToggle.innerHTML.includes(`class="undeafen"`)) headphoneToggle.innerHTML = UNDEAF;
+    if (headphoneToggle.innerHTML.includes(`class="deafnd"`)) headphoneToggle.innerHTML = UNDEAF;
     else headphoneToggle.innerHTML = DEAF;
 });
