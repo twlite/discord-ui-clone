@@ -87,6 +87,7 @@ body {
     border-radius: 50%;
     text-align: center;
     transition: 0.2s;
+    user-select: none;
 }
 
 .invite {
@@ -175,6 +176,7 @@ body {
     margin: 5px;
     border-radius: 50%;
     cursor: pointer;
+    user-select: none;
 }
 
 .userAvatar:hover {
