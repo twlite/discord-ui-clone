@@ -234,39 +234,3 @@ body {
 .icon-strikethrough {
     fill: var(--red);
 }
-
-.server:hover::before {
-    position: absolute;
-    content: '';
-    left: 0;
-    width: 3px;
-    background: #FFFFFF;
-    height: 22px;
-    margin-left: -9px;
-    cursor: default;
-    border-radius: 20%;
-}
-
-.server.active::before {
-    position: absolute;
-    content: '';
-    left: 0;
-    width: 3px;
-    background: #FFFFFF;
-    height: 30px;
-    margin-left: -9px;
-    cursor: default;
-    border-radius: 20%;
-}
-
-.server.unread::before {
-    position: absolute;
-    content: '';
-    left: 0;
-    width: 5px;
-    background: #FFFFFF;
-    height: 11px;
-    margin-left: -9px;
-    border-radius: 100%;
-    cursor: default;
-}
