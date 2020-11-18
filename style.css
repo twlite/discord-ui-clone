@@ -9,6 +9,7 @@
     --green: #43b581;
     --dark-primary: #2f3136;
     --text-gray: #dcddde;
+    --user-box: #292B2F;
 }
 
 body {
@@ -36,6 +37,10 @@ body {
     background-color: var(--dark-server-list);
     overflow-y: auto;
     scrollbar-width: 0px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .servers::-webkit-scrollbar, .nav::-webkit-scrollbar {
@@ -48,9 +53,8 @@ body {
     color: #FFFFFF;
     border-radius: 50%;
     text-align: center;
-    height: 58px;
-    width: 58px;
-    margin-left: 5px;
+    height: 48px;
+    width: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,9 +69,8 @@ body {
     color: #FFFFFF;
     border-radius: 50%;
     text-align: center;
-    height: 58px;
-    width: 58px;
-    margin-left: 5px;
+    height: 48px;
+    width: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,17 +110,20 @@ body {
     border-radius: 15px;
 }
 
-.nav {
+.side-bar {
+    
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 1;
     position: relative;
     float:right;
-    width: 100%;
+    width: 80%;
     height: 100vh;
-    overflow-y: auto;
     background-color: var(--dark-primary);
+}
+.nav {
+    overflow-y: auto;
 }
 
 .navGuildItems {
@@ -137,4 +143,12 @@ body {
 
 .guildDropdown {
     margin-right: 43px;
+}
+.userBox {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--user-box);
+    width: 100%;
+    height: 53px;
+    margin-bottom: 0;
 }
